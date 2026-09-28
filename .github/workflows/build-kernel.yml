@@ -40,7 +40,7 @@ jobs:
         run: |
           mkdir -p toolchains/clang
           cd toolchains/clang
-          wget -q "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android14-release/clang-${{ env.CLANG_VERSION }}.tar.gz" -O clang.tar.gz
+          wget -q "https://github.com/Clang-AOSP/clang-r487747c/releases/download/clang/clang.tar.gz" -O clang.tar.gz
           tar -xzf clang.tar.gz
           rm clang.tar.gz
           cd ../..
