@@ -40,7 +40,7 @@ jobs:
         run: |
           mkdir -p toolchains/clang
           cd toolchains/clang
-          wget -q "https://github.com/Clang-AOSP/clang-r487747c/releases/download/clang/clang.tar.gz" -O clang.tar.gz
+          wget -q "https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu.tar.xz" -O clang.tar.gz
           tar -xzf clang.tar.gz
           rm clang.tar.gz
           cd ../..
