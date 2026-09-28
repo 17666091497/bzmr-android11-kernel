@@ -47,7 +47,7 @@ jobs:
 
       - name: Integrate KernelSU
         run: |
-          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/env.KSU[B]RANCH/kernel/setup.sh"|bash-s{{ env.KSU_BRANCH }}
+          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/${{ env.KSU_RANCH }}/kernel/setup.sh" | bash -s -- "${{ env.KSU_BRANCH }}"
 
       - name: Enable KernelSU in Defconfig
         run: |
